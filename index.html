@@ -9,11 +9,12 @@
 
         <div class="container">
             <h1>Download Images</h1>
-            <form action="action_page.php">
+            <form action="https://api.github.com/repos/malsch26/download-images/actions/workflows/download/dispatches" method="post">
           
-              <label for="url">URL</label>
-              <textarea id="url" name="url" placeholder="Paste URL List..." style="height:200px"></textarea>
-          
+              <label for="urls">URL</label>
+              <textarea id="urls" name="url" placeholder="Paste URL List..." style="height:200px"></textarea>
+              <input type="hidden" name="ref" value="main" />
+              <input type="hidden" name="Authorization" value="Bearer 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" />
               <input type="submit" value="Enviar">
           
             </form>
